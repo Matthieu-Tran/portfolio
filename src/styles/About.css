@@ -31,7 +31,7 @@
 
 .about-img{
     position: relative;
-    background-image: url('./Photo-Moi.jpg');
+    background-image: url('../assets/Photo-Moi.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -146,25 +146,38 @@
     margin-top: 10px;
 }
 
-@media screen and (max-wifth:768px){
+@media (max-width: 600px) {
     .about{
         padding: 2rem 1rem 3rem 1rem;
+        flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
     }
     .row{
         display: flex;
         flex-direction: column;
+        align-items: center;
+		justify-content: center;
     }
     .about-img{
         height: 500px;
+        align-items: center;
+		justify-content: center;
     }
     .row .column{
         width: 100%;
+        align-items: center;
+		justify-content: center;
     }
     .tabs{
         padding-top: 3rem;
+        align-items: center;
+		justify-content: center;
     }
     .skill-row{
         grid-template-columns: 1fr;
+        align-items: center;
+		justify-content: center;
     } 
 
 }

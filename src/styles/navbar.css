@@ -8,7 +8,7 @@
 }
 
 .header--dark {
-    background-color: #000;
+    background-color: 	#26373c;
     color: #fff;
 }
 
@@ -76,6 +76,9 @@ input:checked + .slider:before {
 .header__logo {
 font-size: 30px;
 font-weight: bold;
+object-fit: contain;
+width: 70px;
+height: 70px;
 }
 
 .header__nav {

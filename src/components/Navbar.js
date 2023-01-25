@@ -1,12 +1,13 @@
 import "../styles/navbar.css";
 import React , { useState }from 'react';
+const logo = require('../assets/logo.png');
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
     <header className={`header ${isDarkMode ? 'header--dark' : ''}`}>
-      <div className="header__logo">Logo</div>
+      <img src={logo} alt="Logo" className="header__logo" />
       <nav className="header__nav">
         <a href="#">Home</a>
         <a href="#">About</a>

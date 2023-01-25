@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import '../assets/About.css';
+import '../styles/About.css';
 
 const About = () => {
 

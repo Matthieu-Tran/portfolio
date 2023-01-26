@@ -5,13 +5,13 @@
     padding: 20px;
     background-color: #fff;
     color: #333;
-    transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
 }
 
 .header--dark {
-    background-color: 	#333;
+    background-color: 	rgb(26, 25, 25);
     color: #fff;
-    transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
 }
 
 /* Switch button styles */

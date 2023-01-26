@@ -1,10 +1,27 @@
 import "../styles/navbar.css";
-import React , { useState }from 'react';
+import React , { useEffect }from 'react';
 import { Link } from "react-router-dom";
 const logo = require('../assets/logo.png');
 
 const Navbar = ({setIsDarkMode, isDarkMode}) => {
   
+  // This useEffect will run when the component first mounts
+  // It will check if there is a value saved in local storage for the key 'isDarkMode'
+  // If there is and its value is 'true', it will call setIsDarkMode(true) to set the state to match the saved value
+  useEffect(() => {
+    // check if dark mode is saved in local storage
+    const savedDarkMode = localStorage.getItem('isDarkMode');
+    if (savedDarkMode === 'true') {
+      setIsDarkMode(true);
+    }
+  }, []);
+
+  // This useEffect will run whenever the isDarkMode state changes
+  // It will save the current value of isDarkMode to the local storage
+  useEffect(() => {
+    localStorage.setItem('isDarkMode', isDarkMode);
+  }, [isDarkMode]);
+
   return (
     <header className={`header ${isDarkMode ? 'header--dark' : ''}`}>
       <img src={logo} alt="Logo" className="header__logo" />

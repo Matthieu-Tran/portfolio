@@ -5,12 +5,13 @@ import {Route, Routes, useLocation} from "react-router-dom";
 
 import {AnimatePresence} from 'framer-motion';
 
-function AnimatedRoutes() {
+function AnimatedRoutes(props) {
     const location = useLocation()
+    const { isDarkMode } = props;
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route path='/' element={<About />}/>
+                <Route path='/' element={<About isDarkMode={isDarkMode} />}/>
                 <Route path='/Contact' element={<Contact />}/>
             </Routes>
         </AnimatePresence>

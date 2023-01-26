@@ -3,12 +3,12 @@
   color: #333;
   padding-top: 5px;
   padding-bottom: 10px;
-  transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 .footer--dark{
-    background-color: #333;
+    background-color: rgb(26, 25, 25);
     color: #fff;
-    transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
 }
 
 

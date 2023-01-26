@@ -1,17 +1,16 @@
 import "../styles/navbar.css";
 import React , { useState }from 'react';
+import { Link } from "react-router-dom";
 const logo = require('../assets/logo.png');
 
-const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
+const Navbar = ({setIsDarkMode, isDarkMode}) => {
+  
   return (
     <header className={`header ${isDarkMode ? 'header--dark' : ''}`}>
       <img src={logo} alt="Logo" className="header__logo" />
       <nav className="header__nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/Contact">Contact</Link>
       </nav>
       <label className="switch">
         <input type="checkbox" checked={isDarkMode} onChange={() => setIsDarkMode(!isDarkMode)} />

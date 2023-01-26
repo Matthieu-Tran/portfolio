@@ -104,19 +104,21 @@
 
 .progress-wrap h3{
     font-size: 14px !important;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .progress{
+    width: 80%;
     height: 8px;
     background: rgba(0,0,0,.05);
     overflow: visible;
 }
 
 .progress-bar{
-    width: 80%;
+    width: 60%;
     height: 8px;
     background: #3155CE;
     line-height: 1.2;
@@ -124,7 +126,7 @@
     border-radius: 2px;
 }
 
-.progress-bar span{
+.progress-bar-percent{
     position: absolute;
     top: -30px;
     right: 0;

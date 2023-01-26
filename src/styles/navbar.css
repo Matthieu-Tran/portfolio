@@ -76,11 +76,31 @@ input:checked + .slider:before {
 }
   
 .header__logo {
-font-size: 30px;
-font-weight: bold;
-object-fit: contain;
-width: 70px;
-height: 70px;
+    background-image: url('../assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-size: 30px;
+    font-weight: bold;
+    object-fit: contain;
+    width: 70px;
+    height: 70px;
+}
+
+.header__logo:hover{
+    opacity: 20%;
+}
+
+.header__logo:hover + .header__nav_hello {
+    opacity: 100%;
+    visibility: visible;
+}
+
+.header__nav_hello{
+    position: absolute;
+    top: 45px;
+    left: 33px;
+    visibility: hidden;
 }
 
 .header__nav {
@@ -102,15 +122,26 @@ color: #fff; /* Change the color of the navigation links to white when in dark m
 @media (max-width: 600px) {
 	
 	.header {
+        display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 	}
 
 	.header__logo {
-		width: 100%;
-		text-align: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 70px;
+        height: 70px;
+        left: 22px;
 	}
+    .header__nav_hello{
+        position: relative;
+        top: 0px;
+        left: -34px;
+    }
 
 	.header__nav {
 		width: 100%;

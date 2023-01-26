@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const logo = require('../assets/logo.png');
 
 const Navbar = ({setIsDarkMode, isDarkMode}) => {
-  
+
   // This useEffect will run when the component first mounts
   // It will check if there is a value saved in local storage for the key 'isDarkMode'
   // If there is and its value is 'true', it will call setIsDarkMode(true) to set the state to match the saved value
@@ -24,10 +24,12 @@ const Navbar = ({setIsDarkMode, isDarkMode}) => {
 
   return (
     <header className={`header ${isDarkMode ? 'header--dark' : ''}`}>
-      <img src={logo} alt="Logo" className="header__logo" />
+      <div className='header__logo'></div>
+      <div className="header__nav_hello">Hello</div>
       <nav className="header__nav">
         <Link to="/">Home</Link>
         <Link to="/Contact">Contact</Link>
+        <Link to="/Projects">Projects</Link>
       </nav>
       <label className="switch">
         <input type="checkbox" checked={isDarkMode} onChange={() => setIsDarkMode(!isDarkMode)} />

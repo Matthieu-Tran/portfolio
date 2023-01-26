@@ -19,13 +19,11 @@ const About = ({isDarkMode}) => {
                 <div className='row'>
                     <div className='column'>
                         <div className='about-img'>
-
                         </div>
                     </div>
                     <div className='column'>
                         <div className='tabs'>
                             <div className={toggleTab === 1 ? 'single-tab active-tab': 'single-tab'} onClick= {() => toggleState(1)}>
-                            
                                 <h2> About </h2>
                             </div>
                             <div className={toggleTab === 2 ? 'single-tab active-tab': 'single-tab'} onClick= {() => toggleState(2)}>

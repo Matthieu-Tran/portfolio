@@ -1,38 +1,50 @@
 import React from "react";
 import { projects } from "../data/projects-components";
+import {motion} from 'framer-motion';
 import '../styles/Projects.css'
 
-export default function Projects() {
+const Projects = ({isDarkMode}) =>{
     return (
-        <section id="projects" className="sectionClass">
-          <div className="containerClass">
-            <div className="flexColClass">
-              <h1 className="titleClass">Apps I've Built</h1>
-              <p className="descriptionClass">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                fuga dolore.
-              </p>
-            </div>
-            <div className="flexWrapClass">
-              {projects.map((project) => (
-                <a href="project.link" key="project.image" className="projectClass">
-                  <div className="flex relative">
-                    <img
-                      alt="gallery"
-                      className="imgClass"
-                      src="project.image"
-                    />
-                    <div className="projectInfoClass">
-                      <h2 className="subtitleClass">"project.subtitle"</h2>
-                      <h1 className="projectTitleClass">"project.title"</h1>
-                      <p className="leading-relaxed">"project.description"</p>
-                    </div>
+      <>
+        <motion.div
+          initial={{width: 0}}
+          animate={{width: "100%"}}
+          exit={{x: window.innerWidth, transition: {duration:0.5}}}>        
+        </motion.div>
+
+        <div className={`projects ${isDarkMode ? 'projects--dark' : ''}`}>
+          <div className="flexColClass">
+            <h1 className="titleClass">Projects I've Built</h1>
+            <p className="descriptionClass"> Here's are all the projects I've done in my career of developpement. </p>
+          </div>
+          <div className="projects-grid">
+            {projects.map((project) => (
+              <div className="project-card">
+                <div className="image-container">
+                  {/* Because we want the src attribute and not the stirng. But also we don't know the attribute of product.image, we use Object.values to get this value*/}
+                  <img src={Object.values(project.image)} alt={project.title} ></img>
+                </div>
+                <div className="card-content">
+                  <div className="card-title">
+                    <h3>{project.title}</h3>
                   </div>
-                </a>
+                  <div className="card-body">
+                    <p>{project.description}</p>
+                  </div>
+                </div>    
+                <div className="btn">
+                    <button>
+                      <a>
+                        View More
+                      </a>
+                    </button>
+                  </div>         
+                </div>
               ))}
             </div>
           </div>
-        </section>
+        </>
       );
 }
+
+export default Projects

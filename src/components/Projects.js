@@ -12,7 +12,7 @@ const Projects = ({isDarkMode}) =>{
           </div>
           <div className="projects-grid">
             {projects.map((project) => (
-              <div className="project-card">
+              <div className="project-card" key={Object.values(project.image)}>
                 <div className="image-container">
                   {/* Because we want the src attribute and not the stirng. But also we don't know the attribute of product.image, we use Object.values to get this value*/}
                   <img src={Object.values(project.image)} alt={project.title} ></img>

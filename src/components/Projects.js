@@ -1,17 +1,10 @@
 import React from "react";
 import { projects } from "../data/projects-components";
-import {motion} from 'framer-motion';
 import '../styles/Projects.css'
 
 const Projects = ({isDarkMode}) =>{
     return (
       <>
-        <motion.div
-          initial={{width: 0}}
-          animate={{width: "100%"}}
-          exit={{x: window.innerWidth, transition: {duration:0.5}}}>        
-        </motion.div>
-
         <div className={`projects ${isDarkMode ? 'projects--dark' : ''}`}>
           <div className="flexColClass">
             <h1 className="titleClass">Projects I've Built</h1>

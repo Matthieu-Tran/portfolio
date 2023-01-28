@@ -3,29 +3,6 @@ import ReactDom from 'react-dom'
 import '../styles/Modal.css'
 import { motion } from "framer-motion";
 
-
-
-
-const MODAL_STYLES = {
-  position: 'fixed',
-  top: '44%',
-  left: '44.5%',
-  transform: 'translate(-50%, -50%)',
-  backgroundColor: '#FFF',
-  padding: '5px',
-  zIndex: 1000
-}
-
-const OVERLAY_STYLES = {
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  backgroundColor: 'rgba(0, 0, 0, .4)',
-  zIndex: 1000
-}
-
 const dropIn = {
     hidden: {
       y: "-100vh",
@@ -45,28 +22,32 @@ const dropIn = {
       y: "100vh",
       opacity: 0,
     },
-  };
+};
 
 export default function Modal({ open, project, onClose }) {
   if (!open) return null
   return ReactDom.createPortal(
     <>
-    {console.log(project.images)}
-        {/* <div style={OVERLAY_STYLES} onClick={onClose} />
-        <div className='modal'>
-            <motion.div
-                variants={dropIn}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                style={MODAL_STYLES}>
-
-                <div className='modal-content'>
-                    <h3>{project.title}</h3>
-                </div>
-                <button onClick={onClose}>Close</button>
-            </motion.div>
-        </div> */}
+        <div onClick={onClose} className="overlay">
+          <motion.div
+              variants={dropIn}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className='modal-card'
+              >
+            <div className='modal-content'>
+                <h3>{project.title}</h3>
+                <ul>
+                    {Object.keys(project).map((key) => {
+                        console.log(project.images)
+                        return <li key={key}>{`${key}: ${project[key]}`}</li>
+                    })}
+                </ul>
+            </div>
+            <button onClick={onClose} className="close-btn">Close</button>
+          </motion.div>
+        </div>
     </>,
     document.getElementById('portal')
   )

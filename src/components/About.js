@@ -129,7 +129,7 @@ const About = ({isDarkMode}) => {
                         {/* Projects content */ }
                         <div className={toggleTab === 3 ?'content active-content' : 'content'}>
                             <div className='exp-column'>
-                                <img src= "https://upload.wikimedia.org/wikipedia/commons/2/2b/Valeo_Logo.svg" alt="logo-valeo" classname="logo-valeo" width="10%" height="10%"/>
+                                <img src= "https://upload.wikimedia.org/wikipedia/commons/2/2b/Valeo_Logo.svg" alt="logo-valeo" className="logo-valeo" width="10%" height="10%"/>
                                 <h3> Project Manager Assistant Intern at Valeo</h3>
                                 <span> April 2022 - July 2022 </span>
                             <p> Collect and evaluate business requirements as part of the Information Systems team, and collaborate with external technical providers to propose the best solutions. <br/>

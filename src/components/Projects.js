@@ -25,15 +25,13 @@ const Projects = ({isDarkMode}) =>{
                   {/* Because we want the src attribute and not the stirng. But also we don't know the attribute of product.image, we use Object.values to get this value*/}
                   <img src={Object.values(project.images)[0]} alt={project.title} ></img>
                 </div>
-                <div className="card-content">
+                <span className="card-content">
                   <div className="card-title">
                     <h3>{project.title}</h3>
                   </div>
                   <div className="card-body">
                     <p>{project.description}</p>
                   </div>
-                </div>    
-                <div className="btn">
                 <motion.button 
                   onClick={() => getData(project)}  
                   whileHover={{ scale: 1.1 }}
@@ -41,9 +39,9 @@ const Projects = ({isDarkMode}) =>{
                   className="moreInfo-button">
                   More info
                 </motion.button>
-                <Modal open={isOpen} project={tempData}onClose={() => setIsOpen(false)}/>
-                  </div>         
-                </div>
+                <Modal open={isOpen} isDarkMode={isDarkMode} project={tempData}onClose={() => setIsOpen(false)}/>
+                </span> 
+              </div>         
               ))}
             </div>
           </div>

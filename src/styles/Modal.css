@@ -7,6 +7,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    
   }
 
 .modal-card{
@@ -20,6 +21,12 @@
     align-items: center;
     flex-direction: column;
     display: flex;
+    max-height: 95vh;
+    overflow: auto;
+}
+.modal-card--dark{
+    background-color: 	rgb(26, 25, 25);
+    color: #fff;
 }
 
 
@@ -29,7 +36,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .2);
     z-index: 1000;
   }
   
@@ -48,6 +55,10 @@
     scale: 1.1;
 }
 
+.close-btn--dark{
+    color: #fff;
+}
+
 .carousel{
     cursor: grab;
     overflow: hidden;
@@ -61,7 +72,7 @@
 .item{
     min-height: 1rem;
     min-width: 72%;
-    padding: 18px;
+    padding: 0 18px 10px 18px;
 }
 
 .item img{
@@ -69,6 +80,10 @@
     height: 100%;
     border-radius: 2rem;
     pointer-events: none;
+}
+
+.title-project{
+    margin-bottom: 5px;
 }
 
 

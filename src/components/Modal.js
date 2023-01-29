@@ -23,7 +23,7 @@ const dropIn = {
       opacity: 0,
     },
 };
-export default function Modal({ open, project, onClose }) {
+export default function Modal({ open, project, onClose , isDarkMode}) {
   const[width, setWidth] = useState(0);
   const carousel = useRef(null)
 
@@ -45,10 +45,10 @@ export default function Modal({ open, project, onClose }) {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className='modal-card'
+            className={`modal-card ${isDarkMode ? 'modal-card--dark' : ''}`}
             >
-              <button onClick={onClose} className="close-btn">Close</button> 
-              <h3>{project.title}</h3>          
+              <button onClick={onClose} className={`close-btn ${isDarkMode ? 'close-btn--dark' : ''}`}>Close</button> 
+              <h3 className='title-project'>{project.title}</h3>          
               <motion.div ref={carousel}className='carousel'>
                 <motion.div  
                   drag="x" 
@@ -64,18 +64,18 @@ export default function Modal({ open, project, onClose }) {
               <div className='modal-content'>
                 <div className='project-info'>
                   <div className='project-date'>
-                      2020
+                      Date: {project.date}
                   </div>
                   <div className='project-language'>
-                      Javascript
+                      Language(s) used: {project.languages}
                   </div>
                 </div>
                 <div className='project-description'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis. Proin fermentum leo vel orci porta non. 
+                {project.moreInfo} 
                 </div>
               </div>
             <div className="github-icon">     
-              <a href="https://github.com/Tabasqueau">
+              <a href={project.link}>
                 <FaGithub size="2.5em" className="github-icon"/> 
                 See code
               </a>    

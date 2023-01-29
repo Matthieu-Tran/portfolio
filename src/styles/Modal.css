@@ -11,8 +11,6 @@
 
 .modal-card{
     width: clamp(50%, 800px, 90%);
-    height: fit-content;
-
     padding: 20px;
     position: fixed;
     background-color: #FFF;
@@ -38,9 +36,16 @@
 
 .close-btn {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
+    top: 20px;
+    left: 8%;
     transform: translateX(-50%);
+    background: var(--gradient);
+    border: none;
+    cursor: default;
+}
+
+.close-btn:hover{
+    scale: 1.1;
 }
 
 .carousel{
@@ -94,4 +99,13 @@
 }
 .project-description{
     padding: 1rem;
+}
+
+.github-icon:hover{
+    cursor: pointer;
+    color: #6cc644; 
+}
+
+.github-icon{
+    padding-top: 5px;
 }

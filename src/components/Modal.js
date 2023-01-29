@@ -2,7 +2,7 @@ import React, {useRef, useEffect, useState }from 'react'
 import ReactDom from 'react-dom'
 import '../styles/Modal.css'
 import { motion } from "framer-motion";
-
+import {FaGithub} from "react-icons/fa";
 const dropIn = {
     hidden: {
       y: "-100vh",
@@ -47,7 +47,8 @@ export default function Modal({ open, project, onClose }) {
             exit="exit"
             className='modal-card'
             >
-              <h3>{project.title}</h3>           
+              <button onClick={onClose} className="close-btn">Close</button> 
+              <h3>{project.title}</h3>          
               <motion.div ref={carousel}className='carousel'>
                 <motion.div  
                   drag="x" 
@@ -73,10 +74,12 @@ export default function Modal({ open, project, onClose }) {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis. Proin fermentum leo vel orci porta non. 
                 </div>
               </div>
-                   
-
-            <button onClick={onClose} className="close-btn">Close</button>
-            <button>Link to Git-Hub</button>  
+            <div className="github-icon">     
+              <a href="https://github.com/Tabasqueau">
+                <FaGithub size="2.5em" className="github-icon"/> 
+                See code
+              </a>    
+            </div>  
           </motion.div>
         </div>
     </>,

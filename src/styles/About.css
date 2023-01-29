@@ -253,7 +253,7 @@
 
 @media (max-width: 850px) {
     .about{
-        padding: 2rem 1rem 3rem 1rem;
+        padding: 20px 10% 3rem 6%;
         flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;

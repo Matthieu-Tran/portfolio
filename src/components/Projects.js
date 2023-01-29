@@ -5,9 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import Modal from './Modal'
 
 const Projects = ({isDarkMode}) =>{
-
   const[tempData, setTempData] = useState([]) 
-  const [isOpen, setIsOpen] = useState(false)
+  const[isOpen, setIsOpen] = useState(false)
     const getData = (project) => {
       setTempData(project)
       setIsOpen(true)

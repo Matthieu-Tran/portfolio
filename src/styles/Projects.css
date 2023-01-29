@@ -1,5 +1,5 @@
 .projects{
-    padding: 3rem 3rem 3rem 3rem;
+    padding: 3rem 1rem 3rem 1rem;
     background: #f8f8f8;
     transition: background-color 0.4s ease-in-out;
     text-align: center;
@@ -29,7 +29,6 @@
     animation: ease-in-out;
     display: grid;
     border-radius: 50px;
-
 }
 
 .project-card:hover{
@@ -76,4 +75,15 @@ h3,p{
   }
   
 
-
+  @media (max-width: 850px) {
+    .projects{
+        padding: 20px 10% 3rem 6%;
+        flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+    }
+    .project-card{
+        width: 90%;
+        margin-left: 7%;
+    }
+}

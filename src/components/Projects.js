@@ -1,7 +1,7 @@
 import React, {useState } from "react";
 import { projects } from "../data/projects-components";
 import '../styles/Projects.css'
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Modal from './Modal'
 
 const Projects = ({isDarkMode}) =>{

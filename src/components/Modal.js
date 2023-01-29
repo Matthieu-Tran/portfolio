@@ -25,11 +25,15 @@ const dropIn = {
 };
 export default function Modal({ open, project, onClose }) {
   const[width, setWidth] = useState(0);
-  const carousel = useRef()
+  const carousel = useRef(null)
 
-  useEffect(() =>{
-    console.log(carousel)
-  }, [])
+  useEffect(() => {
+    if (open) {
+      if (carousel.current) {
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+      }
+    }
+  }, [open])
 
   if (!open) return null
   return ReactDom.createPortal(
@@ -44,8 +48,11 @@ export default function Modal({ open, project, onClose }) {
             className='modal-card'
             >
               <h3>{project.title}</h3>           
-              <motion.div ref={carousel} className='carousel'>
-                <motion.div drag="x" dragConstraints={{right: 0, left: -790}} className='inner-carousel'>
+              <motion.div ref={carousel}className='carousel'>
+                <motion.div  
+                  drag="x" 
+                  dragConstraints={{right: 0, left: -width}} 
+                  className='inner-carousel'>
                   {project.images.map((image, index) => (
                     <motion.div key={index} className='item'>
                       <img src={image} key={index} alt={`image-${index}`} />

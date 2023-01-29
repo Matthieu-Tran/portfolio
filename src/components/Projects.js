@@ -19,8 +19,8 @@ const Projects = ({isDarkMode}) =>{
             <p className="descriptionClass"> Here's are all the projects I've done in my career of developpement. </p>
           </div>
           <div className="projects-grid">
-            {projects.map((project) => (
-              <div className="project-card" key={Object.values(project.images)}>
+            {projects.map((project, index) => (
+              <div className="project-card" key={index}>
                 <div className="image-container">
                   {/* Because we want the src attribute and not the stirng. But also we don't know the attribute of product.image, we use Object.values to get this value*/}
                   <img src={Object.values(project.images)[0]} alt={project.title} ></img>

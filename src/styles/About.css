@@ -158,7 +158,7 @@
  
 .HTML{
     width: 70%;
-    animation: seventy 3s;
+    animation: sixty 3s;
 }
 
 .Javascript{
@@ -182,12 +182,12 @@
 }
 .CSS{
     width: 70%;
-    animation: seventy 3s;
+    animation: sixty 3s;
 }
 
 .React{
     width: 50%;
-    animation: fifty 3s;
+    animation: fourty 3s;
 }
 
 
@@ -237,6 +237,14 @@
     }
 }
 
+@keyframes fourty {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
 
 .exp-column h3{
     margin-bottom: 10px;

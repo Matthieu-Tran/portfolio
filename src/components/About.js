@@ -70,7 +70,7 @@ const About = ({isDarkMode}) => {
                                         <h3> HTML</h3>
                                         <div className='progress'>
                                             <div className='progress-bar HTML'>
-                                                <span> 70 % </span>
+                                                <span> 60 % </span>
                                             </div>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@ const About = ({isDarkMode}) => {
                                         <h3> CSS</h3>
                                         <div className='progress'>
                                             <div className='progress-bar CSS'>
-                                                <span> 70 % </span>
+                                                <span> 60 % </span>
                                             </div>
                                         </div>
                                     </div>
@@ -115,7 +115,7 @@ const About = ({isDarkMode}) => {
                                         <h3> React</h3>
                                         <div className='progress'>
                                             <div className='progress-bar React'>
-                                                <span> 50 % </span>
+                                                <span> 40 % </span>
                                             </div>
                                         </div>
                                     </div>

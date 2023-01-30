@@ -17,7 +17,7 @@
     flex: 1;
     align-items: center;
     flex-direction: column;
-    
+    margin: 20px;
 }
 
 .or-h2{
@@ -123,4 +123,11 @@ textarea[name="message"] {
 
 .input-box--dark{
     color: #f8f8f8;
+}
+
+@media (max-width: 850px) {
+    .contact{
+        flex-direction: column;
+    }
+
 }

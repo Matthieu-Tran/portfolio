@@ -56,7 +56,7 @@ export default function Modal({ open, project, onClose , isDarkMode}) {
                   className='inner-carousel'>
                   {project.images.map((image, index) => (
                     <motion.div key={index} className='item'>
-                      <img src={image} key={index} alt={`image-${index}`} />
+                      <img src={image} key={index} alt={project.image} />
                     </motion.div>
                   ))}
                 </motion.div>

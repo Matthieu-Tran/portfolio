@@ -13,12 +13,12 @@ const Navbar = ({setIsDarkMode, isDarkMode}) => {
     if (savedDarkMode === 'true') {
       setIsDarkMode(true);
     }
-  }, []);
+  }, [setIsDarkMode]);
 
   // This useEffect will run whenever the isDarkMode state changes
   // It will save the current value of isDarkMode to the local storage
   useEffect(() => {
-    localStorage.setItem('isDarkMode', isDarkMode);
+    localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 
   return (

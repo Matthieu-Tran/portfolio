@@ -1,7 +1,6 @@
 import "../styles/navbar.css";
 import React , { useEffect }from 'react';
 import { Link } from "react-router-dom";
-const logo = require('../assets/logo.png');
 
 const Navbar = ({setIsDarkMode, isDarkMode}) => {
 
@@ -29,7 +28,7 @@ const Navbar = ({setIsDarkMode, isDarkMode}) => {
       <nav className="header__nav">
         <Link to="/">Home</Link>
         <Link to="/Projects">Projects</Link>
-        <Link to="/Contact">Contact</Link>
+        {/* <Link to="/Contact">Contact</Link> */}
       </nav>
       <label className="switch">
         <input type="checkbox" checked={isDarkMode} onChange={() => setIsDarkMode(!isDarkMode)} />

@@ -25,12 +25,12 @@ export const projects = [
     {
       title: "Questions Generator",
       description:
-        "Command line tool that parse .gift files and create a bank of questions",
+        "Command line tool that parse .gift files and create a bank of questions in Node",
       images: [gl21, gl22, gl23],
       languages: "Javascript / Node",
       date: "OCT-2022 / JAN-2023",
       moreInfo: "Led a team of 4 members for a project that parses .gift files and creates a bank of questions. This project involved conception with creation of scope statements, coding and testing. ",
-      link: "https://github.com/Tabasqueau/discord-bot-werewolves",
+      link: "https://github.com/Tabasqueau/questions-generator",
     },
     {
       title: "Food Blog",
@@ -75,7 +75,7 @@ export const projects = [
     {
       title: "Discord Bot",
       description:
-        "Discord bot ",
+        "Discord bot in Javascript",
       images: [lp1, lp2, lp3],
       languages: "Javascript",
       date: "March 2021",

@@ -1,8 +1,15 @@
 .contact{
     display: flex;
     background: #f8f8f8;
+    transition: background-color 0.4s ease-in-out;
     align-items: center;
     width: 100%;
+}
+
+.contact--dark{
+    background-color: rgb(39, 38, 38);
+    color: #fff;
+    transition: background-color 0.4s ease-in-out;
 }
 
 .info{
@@ -25,6 +32,35 @@
     margin-top: 50px;
     font-size: large;
 }
+
+.btn-download:hover {
+    scale: 1.1;
+    background-color: #8080E0;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.6s;
+}
+  
+.btn-download:active {
+    scale: 0.9;
+}
+
+.btn-download--dark{
+    color: #fff;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.btn-download--dark:hover {
+    scale: 1.1;
+    background-color: #8080E0;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.btn-download--dark:active {
+    scale: 0.9;
+}
+
 
 .form{
     display: flex;
@@ -69,6 +105,21 @@ textarea[name="message"] {
     cursor: pointer;
     transition: 0.6s;
 }
+
+.btn-send--dark{
+    color: #f8f8f8;
+}
+
+.btn-send:hover--dark{
+    color: rgb(39, 38, 38);
+    background-color: #8080E0;
+    cursor: pointer;
+    transition: 0.6s;
+}
 .input-box{
     box-shadow: 0 2px 12px rgba(0,0,0,.1), 0 5px 5px rgba(0,0,0,.1);
+}
+
+.input-box--dark{
+    color: #f8f8f8;
 }

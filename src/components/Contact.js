@@ -7,14 +7,14 @@ import cv from '../assets/CV-Matthieu-Tran.pdf'
 const Contact = ({isDarkMode}) => {
   const form = useRef();
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = cv;
-    link.download = 'CV-MatthieuTran.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const handleDownload = () => {
+  //   const link = document.createElement('a');
+  //   link.href = cv;
+  //   link.download = 'CV-MatthieuTran.pdf';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
   
 
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

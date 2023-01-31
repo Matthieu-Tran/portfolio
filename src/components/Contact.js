@@ -44,12 +44,12 @@ const Contact = ({isDarkMode}) => {
     <div className={`contact ${isDarkMode ? 'contact--dark' : ''}`}>
       <div className='info'>
         <h1> Contact Me !</h1>
-        <h2 className='or-h2'> Or </h2>
+        {/* <h2 className='or-h2'> Or </h2>
         <button 
           onClick={handleDownload} 
           className={`btn-download ${isDarkMode ? 'btn-download--dark' : ''}`}> 
           Download my CV 
-        </button>
+        </button> */}
       </div>
       <div className='form'>
         <form ref={form} onSubmit={sendEmail}>

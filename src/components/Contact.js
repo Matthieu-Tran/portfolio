@@ -2,19 +2,19 @@ import React, { useRef } from 'react';
 import {FaUserAlt , FaEnvelope , FaVoicemail} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import "../styles/Contact.css";
-// import cv from '../assets/CV-Matthieu-Tran.pdf'
+import cv from '../assets/CV-Matthieu-Tran.pdf'
 
 const Contact = ({isDarkMode}) => {
   const form = useRef();
 
-  // const handleDownload = () => {
-  //   const link = document.createElement('a');
-  //   link.href = cv;
-  //   link.download = 'CV-MatthieuTran.pdf';
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = cv;
+    link.download = 'CV-MatthieuTran.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
 
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -44,12 +44,12 @@ const Contact = ({isDarkMode}) => {
     <div className={`contact ${isDarkMode ? 'contact--dark' : ''}`}>
       <div className='info'>
         <h1> Contact Me !</h1>
-        {/* <h2 className='or-h2'> Or </h2>
+        <h2 className='or-h2'> Or </h2>
         <button 
           onClick={handleDownload} 
           className={`btn-download ${isDarkMode ? 'btn-download--dark' : ''}`}> 
           Download my CV 
-        </button> */}
+        </button>
       </div>
       <div className='form'>
         <form ref={form} onSubmit={sendEmail}>

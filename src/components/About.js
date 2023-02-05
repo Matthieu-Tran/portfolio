@@ -26,9 +26,9 @@ const About = ({isDarkMode}) => {
                         <div className={toggleTab === 3 ? 'single-tab active-tab': 'single-tab'} onClick= {() => toggleState(3)}>
                             <h2> Experiences </h2>
                         </div>
-                        <div className={toggleTab === 4 ? 'single-tab active-tab': 'single-tab'} onClick= {() => toggleState(4)}>
+                        {/* <div className={toggleTab === 4 ? 'single-tab active-tab': 'single-tab'} onClick= {() => toggleState(4)}>
                             <h2> Formation </h2>
-                        </div>
+                        </div> */}
                     </div>
                     <div className='tab-content'>
                         {/* About content */ }

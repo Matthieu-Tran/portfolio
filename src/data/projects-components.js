@@ -49,7 +49,7 @@ export const projects = [
       images: [lego1, lego2, lego3],
       languages: "Python",
       date: "MAY 2022",
-      moreInfo: "Program in Python that imitates the travelling salesman problem but with legos. To make short, the Traveling Salesman Problem (TSP) seeks the shortest route visiting cities and returning to start. It is NP-hard, so approximations are used. It has practical applications in various fields. In this program it has to find the best lego tower with 4 different creteria: the diversity of legos, the tower with the most red legos, the heighest tower and the smallest one",
+      moreInfo: "Program in Python that imitates the travelling salesman problem but with legos. To make short, the Traveling Salesman Problem (TSP) seeks the shortest route visiting cities and returning to start. It is NP-hard, so approximations are used. It has practical applications in various fields. In this program it has to find the best lego tower between 4 different creteria: the diversity of legos, the tower with the most red legos, the heighest tower or the smallest one",
       link: "https://github.com/Matthieu-Tran/Travelling-salesman-problem",
     },
     {

@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import {FaUserAlt , FaEnvelope , FaVoicemail} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import "../styles/Contact.css";
-import cv from '../assets/CV-Matthieu-Tran.pdf'
+import cv from '../assets/CV-Matthieu-Tran-Eng-Version.pdf'
 
 const Contact = ({isDarkMode}) => {
   const form = useRef();

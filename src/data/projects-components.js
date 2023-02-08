@@ -56,7 +56,7 @@ export const projects = [
       title: "RPG",
       description:
         "Command line RPG in JAVA",
-      images: [rpg1, rpg2, rpg3],
+      images: [rpg2, rpg1, rpg3],
       languages: "Java",
       date: "OCT-2021 / NOV-2021",
       moreInfo: "Small Role Play Game in a command line written in Java. It features the use of nested enums, fields, constructors, getters, setters, random number generation, error checking, and the implementation of the hashCode, equals and toString methods. It also includes unit testing",

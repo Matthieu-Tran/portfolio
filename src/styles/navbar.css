@@ -107,6 +107,11 @@ input:checked + .slider:before {
 display: flex;
 }
 
+.header__link:hover {
+    transform: scale(1.1);
+}
+
+
 .header__nav a {
 margin-left: 20px;
 text-decoration: none;

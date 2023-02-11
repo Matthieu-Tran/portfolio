@@ -26,9 +26,9 @@ const Navbar = ({setIsDarkMode, isDarkMode}) => {
       <div className='header__logo'></div>
       <div className="header__nav_hello">Hello</div>
       <nav className="header__nav">
-        <Link to="/">Home</Link>
-        <Link to="/Projects">Projects</Link>
-        <Link to="/Contact">Contacts</Link>
+        <Link to="/" className="header__link">Home</Link>
+        <Link to="/Projects" className="header__link">Projects</Link>
+        <Link to="/Contact" className="header__link">Contacts</Link>
       </nav>
       <label className="switch">
         <input type="checkbox" checked={isDarkMode} onChange={() => setIsDarkMode(!isDarkMode)} />

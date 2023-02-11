@@ -47,7 +47,7 @@ export default function Modal({ open, project, onClose , isDarkMode}) {
             exit="exit"
             className={`modal-card ${isDarkMode ? 'modal-card--dark' : ''}`}
             >
-              <button onClick={onClose} className={`close-btn ${isDarkMode ? 'close-btn--dark' : ''}`}>Close</button> 
+              <button onClick={onClose} className="close-btn">Close</button> 
               <h3 className='title-project'>{project.title}</h3>          
               <motion.div ref={carousel}className='carousel'>
                 <motion.div  

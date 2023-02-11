@@ -49,15 +49,13 @@
     background: var(--gradient);
     border: none;
     cursor: default;
+    color: #BA4848;
 }
 
 .close-btn:hover{
     scale: 1.1;
 }
 
-.close-btn--dark{
-    color: #fff;
-}
 
 .carousel{
     cursor: grab;

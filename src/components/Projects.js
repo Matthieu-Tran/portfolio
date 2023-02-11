@@ -7,10 +7,15 @@ import Modal from './Modal'
 const Projects = ({isDarkMode}) =>{
   const[tempData, setTempData] = useState([]) 
   const[isOpen, setIsOpen] = useState(false)
-    const getData = (project) => {
-      setTempData(project)
-      setIsOpen(true)
-    }
+  const getData = (project) => {
+    setTempData(project)
+    setIsOpen(true)
+    document.body.style.overflow = "hidden";
+  }
+  const handleCloseModal = () => {
+    setIsOpen(false);
+    document.body.style.overflow = "scroll";
+  };
     return (
       <>
         <div className={`projects ${isDarkMode ? 'projects--dark' : ''}`}>
@@ -39,7 +44,7 @@ const Projects = ({isDarkMode}) =>{
                   className="moreInfo-button">
                   More info
                 </motion.button>
-                <Modal open={isOpen} isDarkMode={isDarkMode} project={tempData}onClose={() => setIsOpen(false)}/>
+                <Modal open={isOpen} isDarkMode={isDarkMode} project={tempData}onClose={handleCloseModal}/>
                 </span> 
               </div>         
               ))}

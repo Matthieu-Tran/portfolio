@@ -21,6 +21,10 @@ import lp3 from '../assets/projects-images/loup-garou/lp3.png'
 import gl21 from '../assets/projects-images/questions-generator/gl02-1.png'
 import gl22 from '../assets/projects-images/questions-generator/gl02-2.png'
 import gl23 from '../assets/projects-images/questions-generator/gl02-3.png'
+
+import cs1 from '../assets/projects-images/client-server-chat/client-server-chat1.png'
+import cs2 from '../assets/projects-images/client-server-chat/client-server-chat2.png'
+import cs3 from '../assets/projects-images/client-server-chat/client-server-chat3.png'
 export const projects = [
     {
       title: "Questions Generator",
@@ -81,6 +85,16 @@ export const projects = [
       date: "March 2021",
       moreInfo: "Developed a discord bot that recreated the card game, The Werewolves of Millers Hollow, that handled the basic game commands.",
       link: "https://github.com/Matthieu-Tran/discord-bot-werewolves",
+    },
+    {
+      title: "Client Server Chat",
+      description:
+        "Java project implementing a client-server chat app using socket programming.",
+      images: [cs1, cs2, cs3],
+      languages: "Java",
+      date: "January 2022",
+      moreInfo: "Project that implements a simple chat application using a client-server architecture in Java. It uses Java's built-in socket programming capabilities to handle communication between the client and server. The server listens for incoming connections from clients and the clients can connect to the server and send messages to it. The server then broadcast the messages to all connected clients.",
+      link: "https://github.com/Matthieu-Tran/client-server-chat",
     },
 
   ];

@@ -296,6 +296,12 @@
         position: absolute;
         right: -30px;
     }
+    .column .tabs{
+        flex-wrap: wrap;
+    }
+    .single-tab {
+        margin-bottom: 15px;
+    }
 }
 @media (max-width: 1020px) {
     .progress-bar span{

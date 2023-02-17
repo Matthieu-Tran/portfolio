@@ -61,6 +61,9 @@
     cursor: grab;
     overflow: hidden;
 }
+.carousel:active{
+    cursor: grabbing;
+}
 
 .inner-carousel{
     display: flex;
@@ -72,6 +75,7 @@
     min-width: 85%;
     padding: 0 18px 10px 18px;
 }
+
 
 .item img{
     width: 100%;

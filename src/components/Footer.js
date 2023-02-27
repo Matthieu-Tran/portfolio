@@ -10,13 +10,13 @@ const Footer = ({isDarkMode}) => {
                     <h4>Social Medias</h4>
                     <ul>
                         <li className="github">
-                            <a href="https://github.com/Matthieu-Tran" target="_blank">
+                            <a href="https://github.com/Matthieu-Tran" target="_blank" rel="noreferrer">
                                 <FaGithub size="2.5em" className="github-icon"/> 
                                 Check out my GitHub
                             </a>
                         </li>
                         <li className="linkedin">
-                            <a href="https://www.linkedin.com/in/matthieu-tran/" target="_blank">
+                            <a href="https://www.linkedin.com/in/matthieu-tran/" target="_blank" rel="noreferrer">
                                 <FaLinkedin  size="2.5em" className="linkedin-icon"/>
                                 My LinkedIn
                             </a>

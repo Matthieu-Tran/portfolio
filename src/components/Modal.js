@@ -75,7 +75,7 @@ export default function Modal({ open, project, onClose , isDarkMode}) {
                 </div>
               </div>
             <div className="github-icon">     
-              <a href={project.link}>
+              <a href={project.link} target="_blank">
                 <FaGithub size="2.5em" className="github-icon"/> 
                 See code
               </a>    

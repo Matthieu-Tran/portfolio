@@ -43,7 +43,7 @@ export const projects = [
       images: [LQDP1, LQDP2, LQDP3],
       languages: "HTML / CSS / PHP / MySQL/ Bootstrap",
       date: "OCT-2021 / DEC-2021",
-      moreInfo: "This project that I built with a pair is recreating a Food-Blog where users can post food recipe. They have to sign-up / sign-in in order to create / comment / rate the others members recipe. There is also a backend with PHP with a database that we created. The admin of the blog can add / remove moderator from the website.",
+      moreInfo: "This project that I built with a pair is recreating a Food-Blog where users can post food recipe. They have to sign-up / sign-in in order to create / comment / rate the others members recipe. There is also a backend with PHP with a database in SQL that we created. The admin of the blog can add / remove moderator from the website.",
       link: "https://github.com/Matthieu-Tran/Food-Blog",
     },
     {

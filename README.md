@@ -1,6 +1,6 @@
 # Matthieu Tran's Portfolio
 
-This is a personal portfolio website built using **React**. It showcases Matthieu Tran's skills, projects, experiences, and educational background in the field of computer science and information systems.
+This is a personal portfolio website built using **React**. It showcases my skills, projects, experiences, and educational background in the field of computer science and information systems.
 
 ## Table of Contents
 

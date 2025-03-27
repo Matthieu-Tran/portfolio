@@ -67,6 +67,16 @@ return (
                                                                             </div>
                                                                     </div>
                                                             </div>
+                                                            <div className='skills-column'>
+                                                                    <div className='progress-wrap'>
+                                                                            <h3> VBA </h3>
+                                                                            <div className='progress'>
+                                                                                    <div className='progress-bar VBA'>
+                                                                                            <span> 60 % </span>
+                                                                                    </div>
+                                                                            </div>
+                                                                    </div>
+                                                            </div>
 
                                                             <div className='skills-column'>
                                                                     <div className='progress-wrap'>
@@ -123,16 +133,7 @@ return (
                                                                             </div>
                                                                     </div>
                                                             </div>
-                                                            <div className='skills-column'>
-                                                                    <div className='progress-wrap'>
-                                                                            <h3> VBA </h3>
-                                                                            <div className='progress'>
-                                                                                    <div className='progress-bar React'>
-                                                                                            <span> 40 % </span>
-                                                                                    </div>
-                                                                            </div>
-                                                                    </div>
-                                                            </div>
+                                                            
 
                                                             
 

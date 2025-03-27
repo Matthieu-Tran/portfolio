@@ -42,7 +42,7 @@
     font-weight: 600;
 }
 
-.about-img{
+.about-img {
     position: relative;
     background-image: url('../assets/Photo-Moi.jpg');
     background-repeat: no-repeat;
@@ -50,7 +50,9 @@
     background-position: center center;
     height: 600px;
     width: 100%;
+    border-radius: 100px; /* Ajustez cette valeur pour obtenir la courbure souhaitée */
 }
+
 
 .content{
     padding-top: 1.5rem;

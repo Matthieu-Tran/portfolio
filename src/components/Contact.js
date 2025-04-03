@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import {FaUserAlt , FaEnvelope , FaVoicemail} from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import "../styles/Contact.css";
-import cv from '../assets/CV-Matthieu-Tran-Eng-Version.pdf'
+import cv from '../assets/Resume-Matthieu.pdf'
 
 const Contact = ({isDarkMode}) => {
   const form = useRef();
@@ -10,7 +10,7 @@ const Contact = ({isDarkMode}) => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = cv;
-    link.download = 'CV-MatthieuTran.pdf';
+    link.download = 'Resume-Matthieu.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

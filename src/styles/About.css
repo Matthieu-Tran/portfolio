@@ -44,6 +44,7 @@
 
 .about-img {
     position: relative;
+    background-image: url('../assets/Photo-Moi.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

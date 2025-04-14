@@ -27,7 +27,7 @@ return (
                                                     <h2> Experiences </h2>
                                             </div>
                                             <div className={toggleTab === 4 ? 'single-tab active-tab': 'single-tab'} onClick= {() => toggleState(4)}>
-                                                    <h2> Formation </h2>
+                                                    <h2> Education </h2>
                                             </div>
                                     </div>
                                     <div className='tab-content'>

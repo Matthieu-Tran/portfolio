@@ -17,7 +17,7 @@ function App() {
     const preloadImages = () => {
       // Dynamically import all images from the specified folders
       const logoImages = importAll(require.context('./assets/logo', false, /\.(png|jpe?g|svg)$/));
-      const projectImages = importAll(require.context('./assets/projects-images', false, /\.(png|jpe?g|svg)$/));
+      const projectImages = importAll(require.context('./assets/projects-images', true, /\.(png|jpe?g|svg)$/));
       const photoMoi = require('./assets/Photo-Moi.jpg');
 
       const allImages = [...logoImages, ...projectImages, photoMoi];

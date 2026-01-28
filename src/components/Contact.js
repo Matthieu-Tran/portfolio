@@ -48,7 +48,7 @@ const Contact = ({isDarkMode}) => {
         <button 
           onClick={handleDownload} 
           className={`btn-download ${isDarkMode ? 'btn-download--dark' : ''}`}> 
-          Download my CV 
+          Download my resume
         </button>
       </div>
       <div className='form'>

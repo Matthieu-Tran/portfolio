@@ -25,7 +25,18 @@ import gl23 from '../assets/projects-images/questions-generator/gl02-3.png'
 import cs1 from '../assets/projects-images/client-server-chat/client-server-chat1.png'
 import cs2 from '../assets/projects-images/client-server-chat/client-server-chat2.png'
 import cs3 from '../assets/projects-images/client-server-chat/client-server-chat3.png'
+
+import climb1 from '../assets/projects-images/Climb/climbing.jpg'
 export const projects = [
+      {
+      title: "Climbing Application (Work In progress)",
+      description:
+        "A mobile app for climbers to log their routes",
+      images: [climb1],
+      languages: "Typescript, React Native",
+      date: "January 2026",
+      moreInfo: "A mobile app for climbers to log boulders and routes with grades, and view their climbing history. Building with React Native, Expo, and Appwrite."
+    },
     {
       title: "Questions Generator",
       description:
@@ -96,5 +107,4 @@ export const projects = [
       moreInfo: "Project that implements a simple chat application using a client-server architecture in Java. It uses Java's built-in socket programming capabilities to handle communication between the client and server. The server listens for incoming connections from clients and the clients can connect to the server and send messages to it. The server then broadcast the messages to all connected clients.",
       link: "https://github.com/Matthieu-Tran/client-server-chat",
     },
-
   ];

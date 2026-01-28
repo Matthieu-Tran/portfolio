@@ -45,8 +45,12 @@ return (
                                                     <h2> 
                                                             Background 
                                                     </h2>
-                                                    <p style={{ textAlign: 'justify' }}> Hello, my name is Matthieu Tran and I am a student majoring in computer science and informations systems at the Technological University of Troyes </p>
-                                                    <p style={{ textAlign: 'justify' }}> I am excited to share my portfolio with you, showcasing my skills and experiences in the field. I have had the opportunity to work on various projects, both individually and as part of a team, and I am eager to continue growing and learning in this dynamic field. Thank you for taking the time to view my portfolio.</p>
+                                        <p style={{ textAlign: 'justify', color: isDarkMode ? '#ffffff' : '#000000' }}> 
+                                                Hello 👋, my name is <strong>Matthieu Tran</strong> and I am a student majoring in <strong>computer science and information systems</strong> at the <strong>Technological University of Troyes</strong> 🎓
+                                                </p>
+                                                <p style={{ textAlign: 'justify', color: isDarkMode ? '#ffffff' : '#000000' }}> 
+                                                I am excited to share my portfolio with you 💼, showcasing my skills and experiences in the field. I have had the opportunity to work on various projects 🚀, both individually and as part of a team, and I am eager to continue growing and learning in this dynamic field 💻. Thank you for taking the time to view my portfolio ✨.
+                                                </p>
                                             </div>
                                             {/* Skills content */ }
                                             <div className={toggleTab === 2 ?'content active-content' : 'content'}>
@@ -149,67 +153,87 @@ return (
                                                     </div>
                                             </div>
 
-                                            {/* Projects content */ }
-                                            <div className={toggleTab === 3 ?'content active-content' : 'content'}>
-                                                    <div className='exp-column'>
-                                                                    <img src= {DiorLogo}alt="dior_logo" className="Dior_logo" width="10%" height="10%"/>
-                                                                    <h3> EMEA IS Project Manager Assistant</h3>
-                                                                    <span> January 2025 - July 2025 </span>
-                                                            <p style={{ textAlign: 'justify' }}> Design and development of a VBA tool to automate file comparison and generate a discrepancy report, thereby reducing the volume of support tickets. <br/>                        
-                                                                    Project management in collaboration with teams in Spain as part of a migration, ensuring coordination and alignment of technical requirements. <br/>
-                                                                    Contributing to the optimisation of data flows and the improvement of internal tools to facilitate access to information and decision-making.<br/>
-                                                                    </p>
-                                                    </div>
-                                                    <div className='exp-column'>
-                                                                    <img src= {EmeriaLogo} alt="logo-emeria" className="logo-emeria" width="10%" height="10%"/>
-                                                                    <h3> Fullstack Engineer</h3>
-                                                                    <span> July 2023 - January 2024 </span>
-                                                            <p style={{ textAlign: 'justify' }}> Developing APIs and microservices as part of a team in a real estate context, in order to optimise system interoperability and improve the efficiency of business processes. <br/>
-                                                                    Participation in the entire development cycle, from needs analysis to production launch, ensuring the quality and performance of the solutions. <br/>
-                                                                    Contributing to the optimisation of data flows and the improvement of internal tools to facilitate access to information and decision-making.<br/>
-                                                                    </p>
-                                                    </div>
-                                                    <div className='exp-column'>
-                                                            <img src= {ValeoLogo}alt="logo-valeo" className="logo-valeo" width="10%" height="10%"/>
-                                                            <h3> Project Manager Assistant Intern at Valeo</h3>
-                                                            <span> April 2022 - July 2022 </span>
-                                                    <p style={{ textAlign: 'justify' }}> Collect and evaluate business requirements as part of the Information Systems team, and collaborate with external technical providers to propose the best solutions. <br/>
-                                                            Determine business requirements and provide appropriate technical assistance. <br/>
-                                                            Use the Google Cloud platform, specifically AppSheet, to implement and deploy solutions. <br/>
-                                                            Manage and administer the Google AppSheet platform at a high level.<br/>
-                                                            Assist teams in India with Office solution administration. <br/>
-                                                            Oversee application development and migration. </p>
-                                                    </div>
+                                     {/* Projects content */ }
+                                        <div className={toggleTab === 3 ?'content active-content' : 'content'}>
+                                                <div className='exp-column'>
+                                                        <img src= {DiorLogo} alt="dior_logo" className="Dior_logo" width="10%" height="10%"/>
+                                                        <h3> EMEA IS Project Manager Assistant</h3>
+                                                        <span> January 2025 - July 2025 </span>
+                                                        <ul style={{ textAlign: 'justify', marginTop: '10px', marginBottom: '10px', lineHeight: '1.8' }}>
+                                                                <li style={{ marginBottom: '8px' }}>🔗 Technical Liaison: Bridged the gap between business teams (Finance/HR) and developers by translating operational needs into robust technical specifications</li>
+                                                                <li style={{ marginBottom: '8px' }}>🐛 Incident Management: Diagnosed Level 2/3 production incidents by analyzing logs and payloads; validated API endpoints and integration flows using Postman</li>
+                                                                <li style={{ marginBottom: '8px' }}>✅ Quality Assurance: Led technical testing phases (UAT) in Jira and coordinated data flow integrity between cloud solutions (SaaS) and on-premise core models</li>
+                                                                <li style={{ marginBottom: '8px' }}>🛠️ Automation: Designed and developed a VBA tool to automate file comparison and generate discrepancy reports, reducing support ticket volume</li>
+                                                        </ul>
+                                                </div>
                                                 
-                                            </div>
-                                            {/* Formation Content*/ }
-                                            <div className={toggleTab === 4 ?'content active-content' : 'content'}>
-                                                    <div className='exp-column'>
-                                                            <img src= {UTTLogo} alt="logo-utt" className="logo-utt" width="20%" height="20%"/>
-                                                            <h3> Computer and Information Systems Engineer </h3>
-                                                            <span> 2022 - 2025 </span>
-                                                    <p style={{ textAlign: 'justify' }}> During my training in Computer Science and Information Systems Engineering, I took several key courses. I studied "Software Engineering Fundamentals" and "Object-Oriented System Analysis and Design" to master development and system structuring. The course "Mastering the Fundamentals of IT Infrastructure" gave me a solid understanding of IT infrastructures. I also explored "Data Project Design for Innovation" and "Web Technologies" for web development. <br/>
-
-I deepened my knowledge in security with "Introduction to Information System Security" and in modeling with "Modeling for IS Design." The course "Knowledge Engineering" introduced me to knowledge management. I also took courses in "Business and Law" and "Commercial and Business Law" for a legal perspective. Finally, I improved my language skills with "Professional English" and began learning Korean. </p>
-                                                    </div>
-                                                    <div className='exp-column'>
-                                                            <img src= {NTULogo} alt="logo-ntu" className="logo-ntu" width="20%" height="20%"/>
-                                                            <h3> Exchange Semester at the National Taiwan University </h3>
-                                                            <span> 2024 </span>
-                                                    <p style={{ textAlign: 'justify' }}> During my exchange semester in Taiwan as part of my Engineering program, I enrolled in several enriching courses. I took a "Python Class" to enhance my programming skills and "Introduction to Computer Network" to understand network fundamentals. The course "Artificial Intelligence Programming with Python" allowed me to explore AI concepts using Python. I also participated in "International Companions for Learning" to engage with a diverse student community. <br/>
-
-                                                    To improve my language skills, I took the "General and Enhancing Mandarin Course." Additionally, I gained insights into geological studies through "Introduction to Field Geology." These courses provided a well-rounded educational experience, combining technical knowledge with cultural and linguistic learning. </p>
-                                                    </div>
-                                                    <div className='exp-column'>
-                                                            <img src= {IUTLogo} alt="logo-utt" className="logo-utt" width="30%" height="30%"/>
-                                                            <h3> Bachelor of Technology in Computer Science </h3>
-                                                            <span> 2020 - 2022 </span>
-                                                    <p style={{ textAlign: 'justify' }}> During my computer science Bachelor Diploma at the IUT d'Orsay, I completed a variety of courses that provided a strong foundation in computer science. I studied "Object-Oriented Design" and "Object-Oriented Programming (Java)" to develop my programming skills. The course "Database Programming and Administration" equipped me with skills in database management. I also learned about "IT Project Management" and "Network Services" to understand the broader aspects of IT infrastructure.<br/>
-
-                                                    Additionally, I took "Information and Communication Technology Law" to grasp the legal aspects of IT. The course "Advanced Algorithms" deepened my understanding of algorithmic principles. I gained practical web development skills through "Web Programming (HTML/CSS/PHP)" and strengthened my mathematical background with courses in "Mathematics," including graphs, analysis, probability, statistics, and algebra. </p>
-                                                    </div>
-                                                    
-                                            </div>
+                                                <div className='exp-column'>
+                                                        <img src= {EmeriaLogo} alt="logo-emeria" className="logo-emeria" width="10%" height="10%"/>
+                                                        <h3> Fullstack Engineer</h3>
+                                                        <span> July 2023 - January 2024 </span>
+                                                        <ul style={{ textAlign: 'justify', marginTop: '10px', marginBottom: '10px', lineHeight: '1.8' }}>
+                                                                <li style={{ marginBottom: '8px' }}>🚀 SaaS Development: Built business features for the "Millenium" platform using TypeScript (NestJS/React) and resolved complex full-stack bugs</li>
+                                                                <li style={{ marginBottom: '8px' }}>🗄️ Data Architecture: Interfaced the central MySQL database with PostgreSQL microservices. Implemented Prisma ORM and GraphQL API to optimize access and fluidity of real-estate data</li>
+                                                                <li style={{ marginBottom: '8px' }}>🏗️ Quality & Architecture: Actively involved in application architecture (Hexagonal principles) and implementing TDD for targeted developments. Conducted regular code reviews and shared best practices</li>
+                                                                <li style={{ marginBottom: '8px' }}>🧪 Automated Testing: Designed unit tests with Jest and end-to-end (E2E) tests with Cypress to secure critical user journeys</li>
+                                                        </ul>
+                                                </div>
+                                                
+                                                <div className='exp-column'>
+                                                        <img src= {ValeoLogo} alt="logo-valeo" className="logo-valeo" width="10%" height="10%"/>
+                                                        <h3> Project Manager Assistant Intern at Valeo</h3>
+                                                        <span> April 2022 - July 2022 </span>
+                                                        <ul style={{ textAlign: 'justify', marginTop: '10px', marginBottom: '10px', lineHeight: '1.8' }}>
+                                                                <li style={{ marginBottom: '8px' }}>💡 Technical Development: Developed custom features using Google Apps Script (JavaScript) and AppSheet to automate complex data workflows and generate audit reports</li>
+                                                                <li style={{ marginBottom: '8px' }}>📋 Requirement Analysis: Translated business needs into technical specifications and managed the software backlog to ensure alignment between Product Owners and developers</li>
+                                                                <li style={{ marginBottom: '8px' }}>✨ Software Quality: Defined and executed test cases during UAT phases, resolving technical roadblocks and ensuring compliance of new tools with internal security standards</li>
+                                                                <li style={{ marginBottom: '8px' }}>🌏 Cross-team Collaboration: Assisted teams in India with Office solution administration and oversaw application development and migration</li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                                                                {/* Formation Content*/ }
+                                        <div className={toggleTab === 4 ?'content active-content' : 'content'}>
+                                                <div className='exp-column'>
+                                                        <img src= {UTTLogo} alt="logo-utt" className="logo-utt" width="20%" height="20%"/>
+                                                        <h3>🎓 Computer Science & Information Systems Engineer</h3>
+                                                        <span>2022 - 2025 | University of Technology of Troyes</span>
+                                                        <ul style={{ textAlign: 'justify', marginTop: '10px', marginBottom: '10px', lineHeight: '1.8' }}>
+                                                                <li style={{ marginBottom: '8px' }}>💻 Technical & Strategic Core: Expertise in software design, IT infrastructure, and cybersecurity, complemented by a strategic background in Business Law and Knowledge Engineering</li>
+                                                                <li style={{ marginBottom: '8px' }}>🏗️ Software Engineering: Mastered Software Engineering Fundamentals and Object-Oriented System Analysis and Design for development and system structuring</li>
+                                                                <li style={{ marginBottom: '8px' }}>🔒 Security & Infrastructure: Deepened knowledge in Information System Security and gained solid understanding of IT infrastructure fundamentals</li>
+                                                                <li style={{ marginBottom: '8px' }}>📊 Data & Innovation: Explored Data Project Design for Innovation, Modeling for IS Design, and Knowledge Engineering for knowledge management</li>
+                                                                <li style={{ marginBottom: '8px' }}>⚖️ Business & Law: Studied Commercial and Business Law for a comprehensive legal perspective on IT systems</li>
+                                                        </ul>
+                                                </div>
+                                                
+                                                <div className='exp-column'>
+                                                        <img src= {NTULogo} alt="logo-ntu" className="logo-ntu" width="20%" height="20%"/>
+                                                        <h3>🌏 Academic Exchange - National Taiwan University</h3>
+                                                        <span>2024 | Taipei, Taiwan</span>
+                                                        <ul style={{ textAlign: 'justify', marginTop: '10px', marginBottom: '10px', lineHeight: '1.8' }}>
+                                                                <li style={{ marginBottom: '8px' }}>🌐 Network Protocols: Developed low-level network protocols (TCP/UDP) using Go and conducted Wireshark packet analysis</li>
+                                                                <li style={{ marginBottom: '8px' }}>🤖 AI Programming: Explored Artificial Intelligence concepts and programming with Python</li>
+                                                                <li style={{ marginBottom: '8px' }}>🗣️ Language & Culture: Improved language skills through General and Enhancing Mandarin Course</li>
+                                                                <li style={{ marginBottom: '8px' }}>🌍 International Experience: Participated in International Companions for Learning to engage with diverse student community</li>
+                                                                <li style={{ marginBottom: '8px' }}>🪨 Field Studies: Gained insights into geological studies through Introduction to Field Geology</li>
+                                                        </ul>
+                                                </div>
+                                                
+                                                <div className='exp-column'>
+                                                        <img src= {IUTLogo} alt="logo-iut" className="logo-iut" width="30%" height="30%"/>
+                                                        <h3>💼 Associate Degree in Computer Science</h3>
+                                                        <span>2020 - 2022 | Technical Institute of Orsay</span>
+                                                        <ul style={{ textAlign: 'justify', marginTop: '10px', marginBottom: '10px', lineHeight: '1.8' }}>
+                                                                <li style={{ marginBottom: '8px' }}>☕ Object-Oriented Programming: Solid foundation in OOP principles and Java programming</li>
+                                                                <li style={{ marginBottom: '8px' }}>🗄️ Database Management: Skills in Database Programming and Administration</li>
+                                                                <li style={{ marginBottom: '8px' }}>🌐 Networking & Security: Understanding of Network Services, TCP/UDP protocols, and cryptography</li>
+                                                                <li style={{ marginBottom: '8px' }}>⚙️ Embedded Systems & Algorithms: Knowledge in embedded systems and advanced algorithmic principles</li>
+                                                                <li style={{ marginBottom: '8px' }}>🌍 Web Development: Practical skills in Web Programming (HTML/CSS/PHP)</li>
+                                                                <li style={{ marginBottom: '8px' }}>📐 Mathematics: Strong background in graphs, analysis, probability, statistics, and algebra</li>
+                                                                <li style={{ marginBottom: '8px' }}>⚖️ IT Law: Understanding of Information and Communication Technology Law</li>
+                                                        </ul>
+                                                </div>
+                                        </div>
                                     </div>
                             </div>
                     </div>

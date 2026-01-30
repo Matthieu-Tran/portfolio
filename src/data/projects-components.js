@@ -27,12 +27,13 @@ import cs2 from '../assets/projects-images/client-server-chat/client-server-chat
 import cs3 from '../assets/projects-images/client-server-chat/client-server-chat3.png'
 
 import climb1 from '../assets/projects-images/Climb/climbing.jpg'
+import climb2 from '../assets/projects-images/Climb/climbing2.png'
 export const projects = [
       {
       title: "Climbing Application (Work In progress)",
       description:
         "A mobile app for climbers to log their routes",
-      images: [climb1],
+      images: [climb1, climb2],
       languages: "Typescript, React Native",
       date: "January 2026",
       moreInfo: "A mobile app for climbers to log boulders and routes with grades, and view their climbing history. Building with React Native, Expo, and Appwrite."
